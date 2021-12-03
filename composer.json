@@ -1,0 +1,14 @@
+{
+    "name": "paco/portal",
+    "description": "crud portal con usuarios e imagenes",
+    "type": "project",
+    "license": "free",
+    "autoload": {
+        "psr-4": {
+            "Portal\\": "src/"
+        }
+    },
+    "require": {
+        "fakerphp/faker": "^1.16"
+    }
+}
