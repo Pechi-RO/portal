@@ -8,7 +8,10 @@ $perfil = -1;
 $error=false;
 
 if (isset($_SESSION['user'])) {
-    $perfil = (new Users)->setUsername($_SESSION)->getPerfil();
+    //ERROR ERROR ERROR ERROR ERROR
+    //cambiar la llamada al metodo hay que tratarlo de forma distinta, comprobar con el de paco 
+    $perfil = (new Users)->setUsername($_SESSION['user'])->getPerfil();
+
 }
 if ($perfil == 0) {
     //header("Location:index.php");
